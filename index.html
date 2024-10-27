@@ -1,0 +1,129 @@
+<html>
+ <head>
+  <title>
+   DJAGOAN08 Store ID
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #4b4b4b, #a6a6a6);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: white;
+        }
+        .container {
+            text-align: center;
+        }
+        .title {
+            font-size: 48px;
+            font-weight: bold;
+            margin: 0;
+        }
+        .subtitle {
+            font-size: 24px;
+            margin: 0;
+        }
+        .button {
+            background-color: #4b4b4b;
+            border: none;
+            border-radius: 25px;
+            color: white;
+            padding: 15px 30px;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 10px 0;
+            cursor: pointer;
+            width: 300px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .button:hover {
+            background-color: #3a3a3a;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .image-container {
+            margin-top: 20px;
+            border-radius: 25px;
+            overflow: hidden;
+            width: 300px;
+            height: 150px;
+            position: relative;
+        }
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            transition: left 1s ease-in-out;
+        }
+        .image-container img.active {
+            left: 0;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="container">
+   <div class="title">
+    DJAGOAN08
+   </div>
+   <div class="subtitle">
+    STORE ID
+   </div>
+   <a class="button" href="https://example.com/saluran-store">
+    SALURAN STORE
+   </a>
+   <a class="button" href="https://example.com/instagram-ofc">
+    INSTAGRAM OFC
+   </a>
+   <a class="button" href="https://example.com/youtube-ofc">
+    YOUTUBE OFC
+   </a>
+   <a class="button" href="https://example.com/instagram-po">
+    INSTAGRAM PO
+   </a>
+   <a class="button" href="https://example.com/saluran-po">
+    SALURAN PO
+   </a>
+   <a class="button" href="https://example.com/website-store">
+    WEBSITE STORE
+   </a>
+   <a class="button" href="https://example.com/donate-here">
+    DONATE HERE
+   </a>
+   <div class="image-container">
+    <img alt="Image 1 with a star icon in the center" class="active" height="150" src="https://placehold.co/300x150?text=Image+1" width="300"/>
+    <img alt="Image 2 with a star icon in the center" height="150" src="https://placehold.co/300x150?text=Image+2" width="300"/>
+    <img alt="Image 3 with a star icon in the center" height="150" src="https://placehold.co/300x150?text=Image+3" width="300"/>
+    <img alt="Image 4 with a star icon in the center" height="150" src="https://placehold.co/300x150?text=Image+4" width="300"/>
+    <img alt="Image 5 with a star icon in the center" height="150" src="https://placehold.co/300x150?text=Image+5" width="300"/>
+   </div>
+   <div class="footer">
+    © COPYRIGHT FULL BY zscriptz / DJagoan08
+   </div>
+  </div>
+  <script>
+   let currentIndex = 0;
+        const images = document.querySelectorAll('.image-container img');
+        const totalImages = images.length;
+
+        function showNextImage() {
+            images[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex + 1) % totalImages;
+            images[currentIndex].classList.add('active');
+        }
+
+        setInterval(showNextImage, 600000); // 600000 ms = 10 minutes
+  </script>
+ </body>
+     </html>
